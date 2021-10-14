@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { activities } from 'src/app/app.constants';
-import { ActionCode, Activity } from 'src/app/app.interface';
+import { activities } from '../../app.constants';
+import { ActionCode, Activity } from '../../app.interface';
 
 @Component({
   selector: 'app-activity-panel',

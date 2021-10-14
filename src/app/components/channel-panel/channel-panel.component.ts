@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Channel } from 'src/app/app.interface';
+import { Channel } from '../../app.interface';
 
 @Component({
   selector: 'app-channel-panel',

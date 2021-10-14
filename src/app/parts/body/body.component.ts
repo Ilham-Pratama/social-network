@@ -7,8 +7,8 @@ import {
   mainVideo,
   people,
   videos,
-} from 'src/app/app.constants';
-import { Channel, MainPost, Post } from 'src/app/app.interface';
+} from '../../app.constants';
+import { Channel, MainPost, Post } from '../../app.interface';
 
 @Component({
   selector: 'app-body',
