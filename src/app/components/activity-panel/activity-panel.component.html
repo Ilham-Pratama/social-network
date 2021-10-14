@@ -1,0 +1,35 @@
+<div class="activity-panel">
+  <div class="panel-header">
+    <div class="title">{{ title }}</div>
+    <div class="browse-all">
+      <a [href]="browseAllLink">{{ browseAllLabel }}</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div
+        *ngFor="let activity of activities"
+        (click)="setActiveIndex(activity.id)"
+        [ngClass]="{'panel-item': true, 'active': activeIndex === activity.id}"
+    >
+      <div class="cover-container">
+        <div class="cover-image"></div>
+      </div>
+      <div class="body">
+        <div class="profile-action">
+          <b>{{ activity.author }}</b> {{ getMessage(activity.actionCode) }}
+        </div>
+        <div class="detail">
+          {{ activity.detail }}
+        </div>
+        <div class="timestamp">
+          <mat-icon aria-hidden="false" aria-label="Icon" class="icon">
+            {{ getIcon(activity.actionCode) }}
+          </mat-icon>
+          <div class="time">
+            {{ activity.timestamp }} ago
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

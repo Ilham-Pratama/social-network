@@ -1,0 +1,13 @@
+<div class="channel-panel">
+  <div class="panel-header">
+    <div class="title">Channels</div>
+    <div class="browse-all">
+      <a href="#">Browse all channels</a>
+    </div>
+  </div>
+  <div class="panel-body">
+    <div class="item" *ngFor="let channel of channels">
+      {{ channel.name }}
+    </div>
+  </div>
+</div>

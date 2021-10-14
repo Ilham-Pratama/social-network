@@ -1,0 +1,39 @@
+.channel-panel {
+  padding-left: 1em;
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-body {
+  border-top: 2px solid #f8f6d4;
+  border-bottom: 2px solid #f8f6d4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  overflow: auto;
+}
+
+.item {
+  height: 6em;
+  display: flex;
+  align-items: flex-end;
+  padding: .4em;
+  background-color: #f8f6d4;
+  color: #884343;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 60em) {
+  .channel-panel {
+    padding-left: 0;
+    margin-top: 1em;
+  }
+  .panel-body {
+    max-height: 35em;
+  }
+}
+

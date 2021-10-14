@@ -1,0 +1,43 @@
+<div class="panel">
+  <div class="panel-header">
+    <div class="title">{{ title }}</div>
+    <div class="browse-all">
+      <a [href]="browseAllLink">{{ browseAllLabel }}</a>
+    </div>
+  </div>
+  <div class="panel-grid">
+    <div class="item1">
+      <div class="author main">
+        <div class="title">{{mainPost.title}}</div>
+        <div class="author-name">{{mainPost.author}}</div>
+      </div>
+      <div *ngIf="mainPost.viewCount" class="view-count">{{mainPost.viewCount}} views</div>
+    </div>
+    <div class="item2">
+      <div class="author">{{posts[0].author}}</div>
+      <div *ngIf="posts[0].viewCount" class="view-count">{{posts[0].viewCount}} views</div>
+    </div>
+    <div class="item3">
+      <div class="author">{{posts[1].author}}</div>
+      <div *ngIf="posts[1].viewCount" class="view-count">{{posts[1].viewCount}} views</div>
+    </div>
+    <div class="upload">
+      <div class="icon-container">
+        <mat-icon aria-hidden="false" aria-label="Upload Icon" class="icon">
+          {{ uploadIcon }}
+        </mat-icon>
+      </div>
+      {{ uploadLabel }}
+      <!-- <div class="label">
+      </div> -->
+    </div>
+    <div class="item5">
+      <div class="author">{{posts[2].author}}</div>
+      <div *ngIf="posts[2].viewCount" class="view-count">{{posts[2].viewCount}} views</div>
+    </div>
+    <div class="item6">
+      <div class="author">{{posts[3].author}}</div>
+      <div *ngIf="posts[3].viewCount" class="view-count">{{posts[3].viewCount}} views</div>
+    </div>
+  </div>
+</div>

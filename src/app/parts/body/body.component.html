@@ -1,0 +1,26 @@
+<div class="body">
+  <div class="responsive-grid">
+    <div class="main">
+      <app-panel title="Videos" [posts]="videos" [mainPost]="mainVideo" uploadLabel="Upload Your Own Video">
+      </app-panel>
+    </div>
+    <div class="secondary">
+      <app-activity-panel title="Activity" browseAllLabel="View timeline / Filter activities"></app-activity-panel>
+    </div>
+  </div>
+  <div class="responsive-grid-bottom">
+    <div class="main">
+      <div class="main-item">
+        <app-panel title="People" [posts]="people" [mainPost]="mainPerson" uploadLabel="Show Your Work">
+        </app-panel>
+      </div>
+      <div class="main-item bottom">
+        <app-panel title="Documents" [posts]="documents" [mainPost]="mainDocument" uploadLabel="Share Your Document">
+        </app-panel>
+      </div>
+    </div>
+    <div class="secondary">
+      <app-channel-panel [channels]="channels"></app-channel-panel>
+    </div>
+  </div>
+</div>

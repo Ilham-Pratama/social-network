@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid #f8f6d4;
+  padding-top: 1.2em;
+  color: #f8f6d4;
+  margin-top: 5em;
+}
+
+.social-media-container {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.social {
+  margin-right: 1em;
+}
+
+.menu-option-container {
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.menu-option-container div {
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.copyright-container {
+  margin-bottom: 2em;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+@media only screen and (max-width: 60em) {
+  .footer {
+    margin-top: 0;
+  }
+}

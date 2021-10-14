@@ -1,0 +1,106 @@
+.item1 {
+  grid-area: main;
+}
+.item2 {
+  grid-area: item1;
+}
+.item3 {
+  grid-area: item2;
+}
+.upload {
+  grid-area: item3;
+}
+.item5 {
+  grid-area: item4;
+}
+.item6 {
+  grid-area: item5;
+}
+
+.panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-grid {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    "main main main main item1 item1"
+    "main main main main item2 item2"
+    "item5 item5 item4 item4 item3 item3";
+  grid-gap: 10px;
+}
+
+.panel-grid > div {
+  background-color: #f8f6d4;
+  color: #884343;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5em;
+  min-height: 10em;
+  cursor: pointer;
+}
+
+.panel-grid .upload {
+  border: 2px solid #f8f6d4;
+  background-color: #884343;
+  color: #f8f6d4;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-out;
+}
+
+.panel-grid .upload .icon-container .icon {
+  border: 1px solid #f8f6d4;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin-right: 0.2em;
+  transform: scale(0.8);
+  transition: 0.2s ease-out;
+}
+
+.panel-grid .upload .label {
+  background-color: red;
+}
+
+.panel-grid > div .author {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.panel-grid > div .main {
+  flex: 3;
+}
+
+.panel-grid > div .author .title {
+  font-size: 1.5em;
+  margin-bottom: 0.2em;
+  line-height: 1em;
+}
+
+.panel-grid > div .view-count {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+@media only screen and (max-width: 65em) {
+  .panel-grid .upload .label {
+    flex: 4;
+  }
+}
+
+@media only screen and (max-width: 45em) {
+  .panel-grid {
+    grid-template-areas:
+      "main main"
+      "item1 item2"
+      "item4 item5"
+      "item3 item3";
+  }
+}

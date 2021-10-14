@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #884343;
+  color: #f8f6d4;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.panel-header {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.panel-header .title {
+  flex: 1;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.panel-header .browse-all {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1em;
+  font-weight: 300;
+}
+
